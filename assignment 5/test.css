@@ -1,0 +1,263 @@
+/* set body padding and margin */
+body{
+    padding: 0;
+    margin: 0;
+}
+/* main section  */
+section{
+    background-color: rgb(219, 218, 218);
+    width: 100vw;
+    height: 770px;
+    padding: 10px 40px;
+
+}
+/* all container and sub container box-sizing value */
+*{
+    box-sizing: border-box;
+}
+/* header section */
+section>#head{
+    width: 100%;
+    height: 140px;
+    background-color: transparent;
+    margin: 0;
+}
+/* heading */
+.htop,.htop1{
+    display: block;
+    box-sizing: border-box;
+    width: 12vw;
+    height: 60px;
+    background-color: transparent;
+   z-index: 3;
+   border: 2px solid rgb(173, 168, 168);
+   color: rgb(173, 168, 168);
+   border-bottom: none;
+   padding: 0px 40px;
+   font-size: 13px;
+   text-align: justify;
+   /* margin-top: -70px; */
+
+}
+/* top of creation L shaped div */
+.htop{
+    float: left;
+}
+/* top of creation L shaped div right side*/
+.htop1{
+    /* margin-top: -47px; */
+    float: right;
+  
+}
+/* heading */
+#head>center>.head1,.head2{
+   display: inline-block;
+   box-sizing: border-box;
+   width: auto;
+   font-size: 2.2vw;
+   /* margin: 10px; */
+   margin: 0;
+   margin-top: 10px;
+   font-stretch: expanded;
+   line-height: 15px;
+ 
+   font-family: Arial, Helvetica, sans-serif;
+   
+}
+/* .head1{
+    font-size: 19opx;
+    color: royalblue;
+} */
+.head2{
+    display: block;
+    float: left;
+    margin-left: 4vw;
+    margin-top: -10px;
+}
+/* paragraph in header */
+.headp{
+    display:block;
+    float: left;
+    font-size: 1.3vw;
+    margin-left: 8vw;
+    /* font-size: 0.02vw;
+    font-weight: 100;
+    width: .1vw; */
+  
+}
+
+/* center>.hbottom,.hbottom1{
+    width: 20%;
+    height: 90px;
+    background-color:rgb(98, 98, 99);
+    display: block;
+    margin-top: -10px;
+    z-index: -1;
+    border: 1px solid black;
+    border-top: none;
+    padding: 0px 20px;
+    font-size: 10px;
+    text-align: justify ;
+   
+}
+.hbottom{
+    float: left;
+    
+}
+.hbottom1{
+    float: right;
+    font-size: 20px;
+} */
+
+#head>center>h1>span{
+    font-size: 1vw;
+    margin-bottom: -50px;
+}
+/* bootom part of L shaped  */
+fieldset{
+    width: 20vw;
+    height: 90px;
+    background-color: transparent;
+    padding: 0 40px;
+    border: 2px solid rgb(173, 168, 168);
+    display: flex;
+    float: left;
+    margin-top: 0px;
+    /* margin-top: 70px; */
+    margin-left: 0px;
+    text-align: justify;
+    font-size: 0.8vw;
+    color: rgb(173, 168, 168);
+    /* position: relative;;
+    margin-top: 20px; */
+
+}
+/* for removing border between to section */
+legend{
+  
+ 
+    display: block;
+    float: left;
+    width: 11.7vw;
+    height: 0;
+    background-color: transparent;
+    content: " ";
+    /* margin-top: 20vh; */
+    
+    margin-left:-40px;
+    /* margin-top: -30px;
+    padding-top: 40px; */
+    
+   
+}
+/* right side bottom section of L */
+.fld{
+    width: 20vw;
+    float: right;
+    font-size: 1.3vw;
+    padding-top: 15px;
+    clear: none;
+    margin: 0;
+    margin-top: -4px;
+}
+
+.fld>legend{
+    float:right;
+    margin-left: 7vw;
+    margin-right: -40px;
+}
+article{
+    width: 100%;
+    height: auto;
+    /* border: 2px solid red; */
+    display: inline-block;
+}
+/* bootom sub section */
+#left,#middle,#right{
+    margin-top: 20px;
+    font-size: 1.2vw;
+}
+/* for material and intro. */
+#left{
+    width: 20%;
+    display: block;
+    float: left;
+}
+#intro,#material{
+    border:1px solid black;
+    padding: 0 20px;
+    background-color: white;
+}
+/* material specifies top margin and bottom padding */
+#material{
+    margin-top: 20px;
+    padding-bottom: 61%;
+}
+/* middle section */
+#middle{
+    width: 55%;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+/* result section of parent middle */
+#result{
+    border: 1px solid black;
+    background-color: white;
+    padding: 0 20px;
+    padding-bottom: 16.5%;
+    font-size: 17px;
+}
+/* aside inside result */
+#result>aside{
+    width: 70%;
+    margin: 40px 15%;
+    height: auto;
+    border: 1px solid black;
+    background-color: yellow;
+    color: red;
+    font-weight: 700;
+    padding: 15px;
+    
+}
+/* right section */
+#right{
+    width: 25%;
+    display: block;
+    float: left;
+}
+/* conclusion of right section */
+#conclusion{
+    border: 1px solid black;
+    padding:0 20px;
+    background-color: white;
+    padding-bottom: 10%;
+}
+/* right sub section */
+#address,#ack,#info{
+    border: 1px solid black;
+    background-color: white;
+    padding: 0 20px;
+}
+/* address sub section */
+#address{
+    margin-top: 20px;
+    padding-bottom: 10.2%;
+}
+/* acknolodgement section */
+#ack{
+    padding-bottom: 6%;
+}
+/* for all h2 header */
+h2{
+    font-size: 20px;
+}
+/* anchor tag */
+a{
+
+    text-decoration: none;
+    color: black;
+}
+
+

@@ -1,0 +1,327 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+/* universal box sizing property */
+*{
+    box-sizing: border-box;
+    color: white;
+}
+/* parent container contain left and right block */
+.container{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+   
+}
+/* set left and right block */
+#left,#right{
+    padding: 1vw;
+    width: 50%;
+    display: block;
+    float: left;
+    height: auto;
+    background-color: black;
+    color: white;
+    /* border: 2px solid white; */
+
+
+}
+/* heading part of a grid  section*/
+.gridhead{
+    font-size: 3vw;
+}
+/* set grid column and rows for every grid */
+.creategrid,.explorergrid,.playgrid,.oemgrid{
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,20vw);
+    grid-auto-rows: 20vw;
+    grid-auto-columns: 1fr;
+}
+.explorergrid,.playgrid{
+    grid-template-rows: repeat(3, 20vw);
+}
+/* side padding for every grid */
+#create,#explorer,#play,#oem{
+    padding-top: 1vw;
+}
+/* footer inside grid */
+p{
+    margin: 0;
+    font-size:2vw;
+    margin-left: 2vw;
+}
+/* grid contain center icon and footer head */
+.creategrid>div:nth-child(1),.creategrid>div:nth-child(3),
+.creategrid>div:nth-child(4),.explorergrid>div:nth-child(1),.explorergrid>div:nth-child(2),
+.explorergrid div:nth-child(3),.explorergrid div:nth-child(4),
+.explorergrid div:nth-child(5),.explorergrid div:nth-child(6),
+.explorergrid div:nth-child(7),.explorergrid div:nth-child(8),
+.playgrid div:nth-child(1),.playgrid div:nth-child(3),
+.playgrid div:nth-child(5),.oemgrid>div:nth-child(1),
+.oemgrid>div:nth-child(3){
+    display: grid;
+    grid-template-rows: 80% 20%;
+}
+.creategrid>div:nth-child(4){
+    background-color: #de3c03;;
+}
+/* set background */
+.creategrid>div:nth-child(1)>div,.image1,.image9,.image15,.ms1,.ms2,.ms3,.ms4,
+.explorergrid div:nth-child(8),.image12,.image13,.image14{
+    background-color:  transparent;
+    padding: 15%;
+    background-image: url(./images/calendar.PNG);
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+.creategrid>div:nth-child(2){
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 40% 40% 20%;
+}
+.creategrid>div:nth-child(2)>h5,.creategrid>div:nth-child(2)>p{
+    grid-column: span 3;
+}
+
+.creategrid>div:nth-child(1),.creategrid>div:nth-child(2),
+.creategrid>div:nth-child(3),.playgrid>div:nth-child(3),
+.sub1,.sub2,.sub3,.sub4{
+    background-color:  #0377d5;
+}
+.explorergrid>div:nth-child(2),.explorergrid div:nth-child(4){
+    background-color: #348bc2;
+}
+.explorergrid div:nth-child(5){
+    background-color: #1da1f2;
+}
+.explorergrid div:nth-child(7){
+    background-color:#d03438;
+}
+.explorergrid div:nth-child(7)>h5{
+    padding: 2vw;
+    font-size: 2vw;
+    margin: 0;
+}
+/* background setting and outer margin setting */
+
+.image2,.image3,.image4,.image5,.image6,.image8,
+.image7,.image8,.image10,.image11,.explorergrid>div:nth-child(1),
+.explorergrid>div:nth-child(3),.playgrid>div:nth-child(4),
+.playgrid>div:nth-child(5),.playgrid>div:nth-child(6),
+.playgrid>div:nth-child(7),.playgrid>div:nth-child(8),
+.oemgrid>div:nth-child(5),.oemgrid>div:nth-child(6){
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20%;
+    background-position: center;
+    background-clip: content-box;
+    background-image: url(./images/gmail.png);
+}
+.image3{
+    background-image: url(./images/yahoo.png);
+}
+.image4{
+    background-image: url(./images/Outlook_white_logo.png);
+}
+.creategrid>div:nth-child(2)>h5,.creategrid>div:nth-child(4)>h5,.explorergrid>div:nth-child(3)>h5{
+    margin: 0;
+    font-size: 2.5vw;
+    font-weight: 100;
+    padding: 0 1vw 0 1vw;
+    text-align: center;
+}
+.creategrid>div:nth-child(4)>h5{
+    grid-column: span 3;
+    padding: 1vw;
+    margin: 0;
+    text-align: left;
+}
+.creategrid>div:nth-child(4)>p{
+    grid-column: span 1;
+    z-index: 2;
+}
+.image5{
+    margin: 0;
+    background-image: url(./images/office_logo.jpg);
+}
+.image10{
+    background-image: url(./images/powerpoint.png);
+}
+.image11{
+    background-image: url(./images/x-box.jpg);
+}
+.image12{
+    background-image: url(./images/gallery.png);
+}
+.explorergrid>div:nth-child(1){
+    grid-column: span 2;
+    margin: 0;
+    background-image: url(./images/battle.jpg);
+}
+.image6{
+    position: relative;
+    left: 85%;
+    bottom: 130%;
+    width: 4vw;
+    height: 4vw;
+    /* border: 4px solid red; */
+    margin: 0;
+    background-image: url(./images/mstore.png);
+}
+.image7{
+    background-image: url(./images/edge.png);
+}
+.image8{
+    margin: 0;
+    background-image: url(./images/fb.png);
+}
+.image9{
+    background-image: url(./images/twitter.png);
+}
+.image15{
+    padding: 0;
+    background-image: url(./images/photoshop.PNG);
+}
+.explorergrid div:nth-child(6){
+   background-color: #001c24;
+}
+.image1{
+    
+    background-image: url(./images/paint.png);
+}
+/* four subgrid  */
+.creategrid>div:nth-child(5),.playgrid div:nth-child(2),
+.oemgrid>div:nth-child(2){
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.ms1{
+    padding: 0;
+    background-image: url(./images/word.png);
+}
+.ms2{
+    padding: 0;
+    background-image: url(./images/powerpoint.png);
+}
+.ms3{
+    padding: 0;
+    background-image: url(./images/excel.ico);
+}
+.ms4{
+    padding: 0;
+    background-image: url(./images/notes.PNG);
+}
+.explorergrid>div:nth-child(3){
+margin: 0;
+background-image: url(./images/weather.jpg);
+filter: saturate(900%);
+
+}
+.explorergrid>div:nth-child(3)>h5{
+    text-align: left;
+}
+.explorergrid>div:nth-child(3)>h5>span{
+    font-size: 5vw;
+}
+    span+sup{
+        top: -3vw;
+    }
+ .explorergrid ul>li{
+     list-style-type: none;
+     font-size: 2vw;
+     position: relative;
+     left: 80%;
+     top: -9vw;
+     padding: 0;
+     margin: 0;
+ }
+ .explorergrid div:nth-child(4){
+     background-color: #475a96;
+ }
+ .explorergrid div:nth-child(8){
+     padding: 0;
+    background-image: url(./images/pencil.PNG);
+}
+.playgrid>div:nth-child(1){
+    background-color: #0f7a16;
+}
+.sub4>img,.sub3>img,.sub2>img,.sub1>img{
+object-fit: cover;
+width: 100%;
+padding: 20%;
+}
+
+.sub2>img{
+    position: relative;
+width: 4vw;
+left: 30%;
+top: 30%;
+}
+.playgrid>div:nth-child(4){
+    margin: 0;
+    background-image: url(./images/one.jpg);
+}
+.playgrid div:nth-child(5){
+    margin: 0;
+    background-image: url(./images/mincraft.jpg);
+}
+.playgrid>div:nth-child(6){
+    margin: 0;
+    background-image: url(./images/card.jpg);
+}
+.playgrid>div:nth-child(7){
+    margin: 0;
+    background-image: url(./images/eight.jpg);
+}
+.playgrid>div:nth-child(8){
+    margin: 0;
+    background-image: url(./images/emire.jpg);
+}
+.playgrid>div:nth-child(9){
+    margin: 0;
+    background-image: url(./images/nine.jpg);
+}
+.oemgrid>div:nth-child(5){
+    margin: 0;
+    background-origin: border-box;
+    background-image: url(./images/intel.jpg);
+}
+.oemgrid>div:nth-child(6){
+    margin: 0;
+    background-image: url(./images/amazon.png);
+}
+.oemgrid>div:nth-child(1),.oemgrid>div:nth-child(3),.bttm1,.bttm2,.bttm3,.bttm4{
+    background-color: #011952;
+}
+.image13{
+    background-origin: content-box;
+    background-image: url(./images/oem.PNG);
+}
+.image14{
+    background-origin: content-box;
+    background-image: url(./images/oem\ sync.PNG);
+}
+.bttm1>img,.bttm2>img,.bttm3>img,.bttm4>img{
+max-width: 5vw;
+position: relative;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.oemgrid>div:nth-child(4)>p{
+    font-size: 5vw;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    color: yellow;
+}

@@ -1,0 +1,64 @@
+/* this is container class for both structure with same height and width */
+.main{
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    display: block;
+    float: left;
+    margin: 60px;
+    margin-top: 150px;
+
+}
+/* style for creating circle apply same property for all  */
+/* style for creating flower like structure apply same property for division .one1,.two2,.three3,.four4 */
+
+.one,.two,.three,.four,.one1,.two2,.three3,.four4{
+    display: block;
+    float: left;
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+    margin: 0px;
+}
+/* division of circle with red color */
+.one{
+    background-color: red;
+    border-top-left-radius: 100px;
+}
+/* division of circle with orange color */
+.two{
+   background-color:orange;
+   border-top-right-radius: 100px;
+}
+/* division of circle with green */
+.three{
+    background-color:green;
+    border-bottom-left-radius: 100px;
+}
+/* division of circle with purple color */
+.four{
+    background-color:purple;
+    border-bottom-right-radius: 100px;
+}
+
+/* division of flower structure with red color */
+.one1{
+    background-color: red;
+    border-radius: 45px 50px 0 50px;
+}
+/* division of flower structure with orange color */
+.two2{
+   background-color:orange;
+   border-radius: 50px 45px 50px 0;
+}
+/* division of flower structure with green color */
+.three3{
+    background-color:green;
+    border-radius: 50px 0 50px 45px;
+}
+/* division of flower structure with purple color */
+.four4{
+    background-color:purple;
+    
+    border-radius: 0 50px 45px 50px;
+}

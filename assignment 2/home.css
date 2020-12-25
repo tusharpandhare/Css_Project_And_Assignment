@@ -1,0 +1,41 @@
+/* set body's margin and padding to 0 */
+body{
+    margin: 0;
+    padding: 0;
+}
+/* navigation section style */
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(253, 115, 44);
+    text-align: center;
+
+}
+/*  style for all list element of parent ul */
+
+ul>li{
+    list-style: none;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 0px 50px o 10px;
+}
+/* style declaration of anchor which is child of every li */
+ul li>a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    margin: 0px 20px 0 20px;
+    padding: 0px 10px 0 10px;
+    
+}
+/* apply hover pseudo class to anchor */
+ul li>a:hover{
+    background-color: red;
+    color: seagreen;
+}
+/* apply active pseudo class to anchor */
+ul li>a:active{
+    background-color: blueviolet;
+    font-weight: bold;
+    color: white;
+}

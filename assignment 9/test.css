@@ -1,0 +1,150 @@
+/* body will set to padding & margin to 0 */
+body{
+    padding: 0;
+    margin: 0;
+}
+/* all content applies box-sizing as border box */
+*{
+    box-sizing: border-box;
+}
+/* parent container for all */
+#main{
+    width: 100%;
+    height: auto;
+    padding: 0px 30px;
+    text-align: center;
+}
+/* red bordered container  */
+#parent{
+    width: 40%;
+    background-color: white;
+    border: 3px dashed red;
+    padding: 1.5vw;
+    position: relative;
+    left: 30%;
+    bottom: -1vw;
+    border-radius: 2vw;
+    text-align: center;
+}
+/*  my activities still now  */
+#child{
+    font-size: 3vw;
+    font-weight: bolder;
+    padding: 1vw;
+    background-color: black;
+    color: white;
+   
+
+}
+/* activity section contain year and activity class */
+section{
+    width: 100%;
+    height:auto;
+    display: inline-block;
+    background-color: rgb(56, 56, 56);
+    padding-top: 4vw;
+    /* position: static; */
+}
+/* section::after{
+    wi
+} */
+/* place vertical line to join year  */
+#parent::after{
+    width: 2px;
+    height: 97vw;
+    background-color: rgb(238, 11, 200);
+    content: " ";
+    display: block;
+    float: left;
+    position: absolute;
+    top: 8.8vw;
+    left: 53%;
+    z-index: 1;
+    
+}
+/*  year and activities */
+section>p{
+    position:relative;
+    color: rgb(156, 154, 154);
+    font-size: 1.6vw;
+    z-index: 99;
+    padding: 1vw;
+    width: 8%;
+    text-align: center;
+    margin: 3vw 0;
+    background-color: rgb(56, 56, 56);
+    
+}
+/* section>.year::before{
+    position: absolute;
+    z-index: 1;
+    left: 4vw;
+    width: 20vw;
+    height: 4vw;
+    content: " ";
+    background: linear-gradient(90deg,blue,red);
+    display: block; */
+/* represent year class */
+section>.year{
+    position:relative;
+    left: 47%;
+
+    /* margin: 20vw; */
+    height: auto;
+    border: 2px solid rgb(238, 11, 200);
+}
+/* represent activity class in section container for
+showing activities between two year */
+section>.activity{
+    position: relative;
+    left: 22%;
+    width: 23vw;
+    height: auto;
+    margin: 3VW 0;
+    border: 2px solid;
+    /* line-height: -10px; */
+    padding: 1vw 0vw 0vw 0vw;
+    border-image-source: linear-gradient(45deg, blue, magenta );
+    border-image-slice: 10;
+    /* border: 2px solid rgb(238, 11, 200); */
+    display: block;
+
+}
+/* placiong some activities to right side of line */
+section>.activity:nth-child(4),section>.activity:nth-child(8),section>.activity:nth-child(12){
+    left: 56%;
+    padding: 0vw 0vw 1vw 0vw;
+    border: 2px solid;
+    border-image-source: linear-gradient(45deg,magenta, blue);
+    border-image-slice: 10;
+}
+/*  placing arrow for right side activity content */
+section>.activity:nth-child(4)::before,section>.activity:nth-child(8)::before,section>.activity:nth-child(12)::before{
+    width: 0px;
+    height: 0px;
+    content: " ";
+    position: relative;
+    left: -1vw;
+    top: 0.6vw;
+    /* background-color: turquoise; */
+    border-top:1vw solid transparent;
+    border-bottom: 1vw solid transparent;
+    border-right: 1vw solid rgb(238, 11, 200);
+    display: block;
+
+}
+/*  placing arrow for left side activity content */
+section>.activity:nth-child(2)::after,section>.activity:nth-child(6)::after,section>.activity:nth-child(10)::after{
+    width: 0px;
+    height: 0px;
+    content: " ";
+    position: relative;
+    left: 22.7vw;
+    top: -1.2vw;
+    /* background-color: turquoise; */
+    border-top:1vw solid transparent;
+    border-bottom: 1vw solid transparent;
+    border-left: 1vw solid rgb(238, 11, 200);
+    display: block;
+
+}

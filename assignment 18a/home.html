@@ -1,0 +1,65 @@
+<!----------------------------------------------------------------------------------------------
++ CSS (animation)
++ Assingment No        : 18a
++ Title                : Create the following progress bar using css animation. Make use of flex.
++ Start Date           : 11/march/2020
++ End Date             : 11/march/2020
+------------------------------------------------------------------------------------------------>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *,*::before,*::after{
+            box-sizing: border-box;
+        }
+        html{
+         height: 100%;  
+         width: 100%;
+           
+        }
+        body{
+            height: 100%;
+            width: 100%;
+            position: relative;
+            display: table;
+            margin: 0;
+        }
+        .container{
+            height: 50%;
+            width: 25%;
+            text-align: center;
+            display:  table-cell;
+            vertical-align: middle ;
+
+        }
+        .container:first-of-type{
+            background-color: #ffeb3b;
+        }
+        .container:first-of-type .rail{
+            stroke: white;
+        }
+        .container:first-of-type .progress{
+            color: #862020;
+        } 
+        .container:first-of-type .cprecentage
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Progress bar</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sub1">
+            <svg class="sv" viewbox="0 0 150 150">
+                <circle class="rail" r="67" cx="75 " cy="75 "></circle>
+                <circle class="progress" r="67" data-target="84" cx="75" cy="75"></circle>
+            </svg>
+            <span class="cpercentage">
+                <span class="value">0</span>
+                <span class="persymbol">%</span>
+            </span>
+        </div>
+    </div>
+</body>
+</html>

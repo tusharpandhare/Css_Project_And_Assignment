@@ -1,0 +1,133 @@
+
+.left{
+    width: 100%;
+}
+.right{
+    width: 100%;
+}
+
+.group1>li>a,.group2>li>a,.group3>li>a{
+    padding: 20px;
+    font-size: 20px;
+    line-height: 20px;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-color: #2d2b32;
+    margin-right: 20px;
+}
+.icon>img{
+  display: none;
+}
+.icon{
+    background-image: url(./images/dashboard.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.icon2{
+    background-image: url(./images/news\ feed.jpg);
+}
+.icon3{
+    background-image: url(./images/icon9.png);
+}
+.icon4{
+    background-image: url(./images/tasks.png);
+}
+.icon5{background-image: url(./images/b.jpg);}
+.icon6{background-image: url(./images/typography.png);}
+.icon7{background-image: url(./images/forms.png);}
+.icon8{background-image: url(./images/tables.png);}
+.icon9{background-image: url(./images/charts.png);}
+.icon10{background-image: url(./images/more\ pages.jpg);}
+.icon11{background-image: url(./images/logout.png);}
+.green,.orange{
+    display: block;
+    float: right;
+    position: relative;
+    left: 20vw;
+
+}
+#wrap{
+    padding: 1vw 0;
+}
+.part1>.part11,.part12,.one{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+}
+.one{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.part11>div,.one>a{
+    padding: 3vw;
+}
+.resize{    font-size: 3vw;}
+.part11 b{font-size: 3vw;}
+.part1 img{
+    width: 9vw;
+}
+.part12 a>img{
+    width: 6vw;
+    height: 4vw;
+}
+.two p{
+    font-size: 19px;
+}
+.two span{
+    color: black;
+}
+.head3{
+    font-size: 4vw;
+}
+.chart{padding: 0;}
+.part2{padding-left: 0;}
+.chart img{width: 100%;}
+.right{ padding: 1vw 0.5vw;}
+.entry label{font-size: 3vw;}
+.entry select{width: 30vw;}
+#search{width: 30vw;}
+.footer>p{font-size: 3vw;}
+.table b,.table p{
+    font-size:2vw;
+}
+.tdetail{
+    font-size: 3vw;
+}
+.bar{
+    width: 5vw;
+    height: 5vw;
+    content: " ";
+    display: block;
+   position: relative;
+   left: 80%;
+    background-color: blue;
+    background-image: url(./images/bars.jpg);
+    background-size: cover;
+}
+.navcon{
+    top: 5px;
+    -webkit-position:sticky;
+    position: sticky;
+    background-color: rgba(31, 30, 30,0.4);
+}
+
+.navigation{
+   display: none;
+}
+.bar:hover ~.navigation{
+   display: block;
+   position: absolute;
+   background-color: orange;
+   width: 40%;
+   top: 90%;
+   z-index: 50;
+   left: 60%;
+   
+}

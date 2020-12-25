@@ -1,0 +1,90 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color:  gray;
+}
+/* setting form background and margin */
+form{
+    margin: 10px 90px;
+    background-color: rgb(243, 153, 126);
+    
+}
+/* heading color top of form*/
+form > h1{
+    color: blue;
+}
+/* font size and color of paragraph adjucent to heading */
+h1+p{
+    font-size: 21px;
+    color: rgb(18, 189, 231);
+}
+/* label styling inside fieldset named adress */
+#address>label{
+    color: rgb(11, 54, 11);
+    font-weight: 500;
+    display:inline-block;
+    margin-top: 20px;
+
+}
+/* setting width of dinner package */
+#dpackage{
+    width: 50px;
+}
+/* style for all fieldset in form */
+form fieldset{
+    width: 450px;
+    height: auto;
+    padding: 20px;
+    background-color: white; 
+    margin: 50px 0 50px 0;
+}
+/* styling for all legend */
+form fieldset legend{
+    color: rgb(194, 18, 150);
+    
+    background-color: white;
+}
+/* style for first and second fieldset only */
+.ticket>label,.payment>label{
+    display: inline-block;
+    margin-top: 20px;
+    color: purple;
+    font-size: 18px;
+}
+/* color pf second fieldset */
+.ticket>label{
+    color: rgb(25, 117, 108);
+}
+
+/* input{
+    margin-top: 20px;
+} */
+/* style of all span i.e hint in label */
+fieldset label span {
+    color:red;
+    margin: 0 10px 0 px;
+    font-size: 12px;
+}
+/* setting width of zip input field */
+#address>#zip{
+    width: 50px;
+}
+/* setting width of state input field */
+#address>#state{
+    width: 30px;
+}
+/* setting width of city input field */
+#address>#city{
+    width: 150px;
+}
+/* setting width of name and street input field */
+[id="name"],[id="str"]{
+    width: 300px;
+}
+/* style for submit button */
+input[type="submit"]{
+    padding: 10px 30px;
+    color: green;
+    background-color: goldenrod;
+}
+

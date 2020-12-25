@@ -1,0 +1,179 @@
+/* setting body padding and margin */
+body{
+margin: 0;
+padding: 0;
+}
+/* box sizing for all */
+*{
+    box-sizing: border-box;
+}
+/* parent container for all */
+#main{
+    margin: 0;
+    padding: 1.4vw;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    
+}
+/* news paper header */
+header{
+    width: 100%;
+    height: auto;
+    /* background-color: blueviolet; */
+    display: flex;
+}
+/* header{
+    column-count: 3;
+    column-width: auto;
+    
+} */
+/* paper name */
+header>h1{
+    font-family: 'chomskyregular';
+    font-size: 6.3vw;
+    width:72.5% ;
+    text-align: center;
+    margin: 0;
+          
+}
+/* abouth price */
+header>.left{
+    width: 13%;
+    height: 5vw;
+    font-size: 1.2vw;
+    line-break: auto;
+    padding: 1vw 1.8vw;
+    border: 8px double black;
+    margin: 1vw 1vw 1vw 1vw;
+}
+/* draws small verticle line */
+header>.left::after{
+    width: 2px;
+    height: 2vw;
+    display: block;
+    content: " ";
+    position: relative;
+    top: 0vw;
+    left: 5vw;
+    background-color: black;
+  
+}
+/* newspaper details on right of head */
+header>.right>span{
+    font-size: 1.8vw;
+    display: block;
+    float: right;
+    clear: right;
+}
+header>.right{
+    width: 12.4%;
+    padding: 2% 0 1% 2% ;
+    font-size: 1.4vw;
+    /* display: block;
+    float: right;
+    position: relative; */
+}
+/* date edition and region section */
+#date{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0;
+    padding: 0.7vh 0.8vw;
+    font-size: 1.3vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-top: 0.6vw;
+
+}
+/* region and edition */
+#date>em{
+    width: 11%;
+    text-align: right;
+}
+#date>p{
+    width: 78%;
+    text-align: center;
+}
+/* }first news */
+.first{
+    padding: 1vw 0;
+    border-bottom: 2px solid black;
+    column-count: 3;
+    font-size: 1.4vw;
+    text-align: justify;
+    text-indent: 4vw;
+    column-gap: 2vw;
+}
+.first>h1{
+    column-span: all;
+    font-size: 4vw;
+    text-align: center;
+    background-color: rgb(180, 180, 180);
+    padding: 0.5vw 0;
+    font-weight: bolder;
+}
+/* delhi crisis image */
+img{
+    width: 100%;
+    display: flex; 
+}
+/* second new */
+.second{
+    width: 70%;
+    padding: 1vw 1vw 1vw 0;
+    column-count: 2;
+    font-size: 1.4vw;
+    text-align: justify;
+    column-gap: 2vw;
+    text-indent: 4vw;
+    float: left;
+} 
+.second>h1,.third>h1{
+    font-size: 2.4vw;
+}
+/* third weather news */
+.third{
+    width: 30%;
+    font-size: 1.4vw;
+    text-align: justify;
+    column-count: 1;
+    text-indent: 4vw;
+    margin-top: 1vw;
+    padding: 0px 0px 0 1.8vw;
+    border-left: 2px solid black;
+}
+/* fourth news */
+.fourth{
+    width: 100%;
+    font-size: 1.4vw;
+    text-align: justify;
+    column-count: 3;
+    text-indent: 4vw;
+    padding: 1vw 0px 0 0;
+
+    
+}
+.fourth>h1{
+    column-span: all;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3vw;
+}
+/* aside of fourth news */
+aside{
+   
+    background-color: rgb(180, 180, 180);
+    display: inline-block;
+    padding: 0.8vw;
+    font-weight: bolder;
+    text-indent: 0;
+}
+h1{
+    text-indent: 0;
+}
+figcaption{
+    font-size: 1vw;
+    text-indent: 0;
+}

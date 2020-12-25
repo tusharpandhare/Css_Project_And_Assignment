@@ -1,0 +1,77 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* grand container */
+ul{
+    padding: 80px 50px;
+    margin: 0;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    border: 2px dashed red;
+    
+}
+/* contains 5 span  */
+ul li{
+    position: relative;
+    list-style-type: none;
+    width: 60px;
+    height: 60px;
+    margin: 0 30px;
+    transform: rotate(-30deg) skew(25deg);
+    background-color: #ccc;
+}
+/* set position to span */
+ul li span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(11, 134, 165);
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    /* backgound image inside span */
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+/* hover effect with opacity */
+ul li:hover span:nth-child(5){
+    transform: translate(40px,-40px);
+    opacity: 1;
+}
+ul li:hover span:nth-child(4){
+    transform: translate(30px,-30px);
+    opacity: 0.8;
+}
+ul li:hover span:nth-child(3){
+    transform: translate(20px,-20px);
+    opacity: 0.6;
+}
+ul li:hover span:nth-child(2){
+    transform: translate(10px,-10px);
+    opacity: 0.4;
+}
+ul li:hover span:nth-child(1){
+    transform: translate(0px,-0px);
+    opacity: 0.2;
+}
+/* setting background image */
+.icon1{
+    background-image: url(./fb.png);
+}
+.icon2{
+    background-image: url(./google.svg);
+}
+.icon3{background-image: url(./twitter.png);}
+.icon4{background-image: url(./in.png);}
+.icon5{background-image: url(./insta.jpg);}

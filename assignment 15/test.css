@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: darkcyan;
+}
+/* box sizing */
+*{
+    box-sizing: border-box;
+}
+/* parent container for all six sub div */
+
+.one{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 10px 13vw;
+    /* border: 2px solid red; */
+    margin: 10px;
+    position: relative;
+    top: 100px;
+    /* background-color: orangered; */
+    perspective: 200px;
+    transform-style: preserve-3d;
+    text-align: center;
+
+}
+/* center heading */
+h1{
+    color: yellow;
+    text-align: center;
+}
+b{
+    font-size: 0.6vw;
+}
+h3,p{
+    margin: 0;
+}
+/* photo albums division */
+.first,.second,.third,.fourth,.fifth,.sixth{
+    padding: 1vw;
+    margin: -2.2px;
+    width: 180px;
+    height: 200px;
+    background-color:red;
+    transform-origin: left;
+    transform: rotatey(-8deg);
+    /* transform: rotateX(10deg); */
+    display: block;
+    float: left;
+    /* position: absolute; */
+}
+/* text containing division */
+.first,.fifth,.fourth{
+    padding: 5vw 1vw;
+    text-align: right;
+}
+/* fourth division */
+.fourth{
+    transform-origin: right;
+    transform: rotateY(9deg);
+    background-color: rgb(18, 158, 104);
+    text-align: left;
+}
+/* second division */
+.second{
+    background-image: url(./images/01.jpg);
+    background-size: cover;
+
+    transform-origin: right;
+    transform: rotateY(8deg);
+}
+/* third division */
+.third{
+    background-image: url(./images/02.jpg);
+    background-size: cover;
+}
+/* fifth division */
+.fifth{
+    transform: rotateY(-7deg);
+}
+/* sixth division */
+.sixth{
+    transform-origin: right;
+    transform: rotateY(7deg);
+    background-image: url(./images/03.jpg);
+    background-size: cover;
+}

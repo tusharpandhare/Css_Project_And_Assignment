@@ -1,0 +1,245 @@
+<!---------------------------------------------------------------------------------------------------------------
++ CSS (Position)
++ Assignment No      :  10
++ Title              :  Create the mark sheet shown below using proper CSS property like position, table, and opacity 
+                        and border image. Required logo and images are provided in the drive.
++ Start Date         :  28/feb/2020
++ End Date           :  28/feb/2020
+------------------------------------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- External file sheet link -->
+    <link rel="stylesheet" href="test.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- parent container for all types of container -->
+    <div id="main">
+        <!-- logo image placed to background of marksheet -->
+        <img src="./images/logo1.png" alt="image not found">
+        <!-- actual marksheet container includes borders -->
+        <div id="marksheet">
+            <!-- header section of marksheet include following
+            * logo of university
+            * serial number
+            * name of university
+            * formarly knowm name of university
+            * statement of marks
+            * examination year
+            -->
+            <header>
+                <img src="./images/logo1.png" alt=" image not found">
+                <p class="srno">SI. NO.:<span>13437205</span></p>
+                <h1>DR. BHIMRAO AMBEDKAR UNIVERSITY, AGRA</h1>
+                <h2>(FORMERLY-AGRA UNIVERSITY)</h2>
+                <h3>MARKSHEET</h3>
+                <h4>STATEMENT OF MARKS: Bachelore of Arts (B.A) Part-I</h4>
+                <p class="examy">EXAMINATION - 2013</p>
+                
+            </header>
+            <div class="capture"></div>
+            <!-- container of basic information of candidate
+            * name of candidate
+            * pnr
+            * father name
+            *reg. no
+            *and address information
+            -->
+            <div id="detail">
+            <p class="twenty">Roll No</p><p class="fourty">:&emsp;133520011107</p><p class="ten">Enrol No :</p><p class="thirty">A-1257989</p>
+            <p class="twenty">Name of the Candidate</p><p class="fourty">:&emsp;KM.SADHANA SINGH</p><p class="ten">Category :</p><p class="thirty">Regular</p>
+            <p class="twenty">Father's Name</p><p class="eighty">:&emsp;SAYAPAL SINGH</p>
+            <p class="twenty">College/Center</p><p class="eighty">:&emsp;352-PRAKASH MAHAVIDYALAYA P.A.C ROAD ETAH</p>
+            
+
+            </div>
+            <!--  marks and subject table  
+            -->
+         <div id="firsttable">
+            <table border="1px" id="#first">
+              
+                <thead>
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col class="last">
+                        </colgroup>
+
+                    <tr>
+                        <th rowspan="2">Name of Subject</th>
+                        <th colspan="6">Marks Obtained Theory Paper</th>
+                        <th colspan="5">Marks Obtained Practical Paper</th>
+                        <th rowspan="2">Total Theory & Practical</th>
+                    </tr>
+                    <tr>
+                        <th>Max</th>
+                        <th>Min</th>
+                        <th>I</th>
+                        <th>II</th>
+                        <th>III</th>
+                        <th>Total</th>
+                        <th>Max</th>
+                        <th>Min</th>
+                        <th>I</th>
+                        <th>II</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>  
+                <tbody>
+                    <!-- <colgroup>
+                        <col class="subject">
+                        </colgroup> -->
+                    <tr>
+                        <td class="sub">GEOGRAPHY</td>
+                        <td>70</td>
+                        <td>25</td>
+                        <td>21</td>
+                        <td>20</td>
+                        <td> </td>
+                        <td>41</td>
+                        <td>30</td>
+                        <td>11</td>
+                        <td>27</td>
+                        <td>--</td>
+                        <td>27</td>
+                        <td>68</td>
+                    </tr>
+                    <tr>
+                        <td class="sub">GENERAL ENGLISH</td>
+                        <td>100</td>
+                        <td>35</td>
+                        <td>23</td>
+                        <td>26</td>
+                        <td> </td>
+                        <td>49</td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td>--</td>
+                        <td> </td>
+                        <td>49</td>
+                    </tr>
+                    <tr>
+                        <td class="sub">SOCIOLOGY</td>
+                        <td>100</td>
+                        <td>35</td>
+                        <td>20</td>
+                        <td>24</td>
+                        <td> </td>
+                        <td>44</td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td>--</td>
+                        <td> </td>
+                        <td>44</td>
+                    </tr>
+                    <tr>
+                        <td class="sub">HOME SCIENCE</td>
+                        <td>70</td>
+                        <td>25</td>
+                        <td>23</td>
+                        <td>20</td>
+                        <td> </td>
+                        <td>43</td>
+                        <td>30</td>
+                        <td>11</td>
+                        <td>26</td>
+                        <td>--</td>
+                        <td>26</td>
+                        <td>69</td>
+                    </tr>
+                    <tfoot>
+                        <tr>
+                            <th rowspan="2" colspan="3">Result : PASS</th>
+                            <th colspan="9">Total of Part-I Year(140/400)</th>
+                            <th style="text-align: center;">230</th>
+                        </tr>
+                        <tr>
+                            <th colspan="9">GRAND TOTAL(140/400)</th>
+                            <th style="text-align: center;">230</th>
+                        </tr>
+
+                    </tfoot>
+
+                </tbody>              
+            </table>
+
+         </div>
+         <!-- 
+             appearing status information table
+          -->
+         <div id="status">
+             <table border="1">
+                 <colgroup>
+                    <col class="secondtbl">
+                </colgroup>
+                 <tr>
+                     <th style="text-align: left;">Qualifying Subject</th>
+                     <th>Marks</th>
+                     <th>Result</th>
+                 </tr>
+                 <tr>
+                     <td style="text-align: left;">ENVIROMENTAL STUDIES</td>
+                     <td>25</td>
+                     <td>CLEAR</td>
+                 </tr>
+                 <tr>
+                     <td style="text-align: left;">RASTRA GAURAV</td>
+                     <td> </td>
+                     <td>NOT CLEAR</td>
+                 </tr>
+
+             </table>
+         </div>
+         <!-- 
+             sign and barcode section
+             * sign and barcode images is placed inside legend
+             * caption of sign and logo inside fieldset
+             * span section is used to give border to sign section
+          -->
+         <div id="sign">
+            <fieldset>
+                <legend> <img src="./images/barcode.png" alt="image not found"></legend>
+                DATE  : 15/09/2013
+            </fieldset>
+             <span>
+               <fieldset>
+                   <legend>  <img src="./images/sign1.png" alt="image not found"></legend>
+                   PREPARED BY
+               </fieldset>
+                 <fieldset>
+                     <legend><img src="./images/sign2.png" alt="image not found"></legend>
+                     CHECKED BY
+                 </fieldset>
+                 <fieldset>
+                     <legend><img src="./images/sign3.png" alt="image not found"></legend>
+                     REGISTRAR
+                 </fieldset>
+             </span>
+
+         </div>
+         <!-- 
+             footer section of marksheet contain note 
+          -->
+         <footer>
+             Note: In case of any discrepancy between the entries in the marksheet issued & in the University record, the University record shall be final
+         </footer>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,410 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+p{
+    position: relative;
+    top: 10%;
+    left: 10%;
+ 
+    color: white;
+    font-size: 2vw;
+    padding: 0;
+    margin: 0;
+}
+h3{
+    color: white;
+    font-size: 2vw;
+    margin: 0;
+    padding-top: 1vw;
+}
+/* left top i.e create will start from here */
+/* left bottom i.e Explorer style */
+.left .top1,.left .bottom1{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,30%);
+    grid-gap: 1vw;
+}
+/* setting explorer grid rows */
+.left .bottom1{
+    grid-template-rows: repeat(3,30vw);
+}
+.left{
+    width: 50%;
+    background-color: black;
+    padding: 1vw;
+}
+.top1>div:nth-child(1),.left .top1>div:nth-child(2),.left .top1>div:nth-child(3)
+{
+    background-color: #0377d5;   
+}
+.top1>div:nth-child(2){
+    grid-column: span 2;
+}
+.top1>div:nth-child(4){
+    background-color: #de3c03;
+}
+.top1>div:nth-child(1)>p,.top1>div:nth-child(3)>p{
+    top:45%
+}
+.top1>div:nth-child(2)>p{
+    top: 0vw;
+}
+.top1>div:nth-child(2)>h5{
+    position: relative;
+    color: white;
+    font-size: 23px;
+    top: -1vw;
+    padding: 0vw 4vw;
+   
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+}
+.top1>div:nth-child(4)>h5{
+    position: absolute;
+    color: white;
+    font-size: 1vw;
+    margin: 0;
+    padding: 2vw 4vw 0 2vw;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+}
+.top1>div:nth-child(4)>p{
+    top: 30%;
+
+}
+.image,.image1,.image8,.image9,.image11,.image12,.image13,.image14{
+    width: 6vw;
+    height: 6vw;
+    
+    background-size: cover;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    content: " ";
+}
+.image2,.image3,.image4{
+    width: 3vw;
+    height: 3vw;
+    
+    background-size: cover;
+    position: relative;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    content: " ";
+}
+.image{
+    background-image: url(./images/calendar.PNG);
+}
+.image1{
+    background-image: url(./images/paint.png);
+}
+.image2{
+    background-image: url(./images/gmail.png);
+   
+    left: 20%;
+}
+.image3{
+    background-image: url(./images/yahoo.png);
+    background-size: contain;
+    
+    background-repeat: no-repeat;
+    left: 50%;
+    top: 2vw;
+}
+.image4{
+    background-image: url(./images/Outlook_white_logo.png);
+    left: 75%;
+    top: -1vw;
+}
+.image5,.image6,.image10{
+    width: 4vw;
+    height: 4vw;
+    content: " ";
+    background-color: white;
+    position: relative;
+    left: 70%;
+    top: 18%;
+    background-image: url(./images/office_logo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#four{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+/* .ms{
+    background-color: violet;
+} */
+.ms{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ms1{
+    background-image: url(./images/word.png);
+}
+.ms2{
+    background-image: url(./images/powerpoint.png);
+}
+.ms3{
+    background-image: url(./images/excel.ico);
+}
+.ms4{
+    background-image: url(./images/notes.PNG);
+}
+/* left top i.e create will ends here */
+/* ---------------------------------- */
+/* Explorer grid setting */
+.bottom{
+    padding-top: 2vw;
+}
+.bottom1>div:nth-child(1){
+    grid-column: span 2;
+    background-image: url(./images/battle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bottom1>div:nth-child(2){
+    background-image: url(./images/edge.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bottom1>div:nth-child(3){
+    background-image: url(./images/weather.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: saturate(900%);
+    padding: 2vw;
+    
+    /* filter: contrast(90%); */
+}
+.bottom1>div:nth-child(3)>h5{
+    color: white;
+    font-size: 3vw;
+    margin: 0;
+    font-weight: 200;
+}
+.bottom1>div:nth-child(3)>h5>span{
+   font-size: 6vw;
+}
+/* weather section */
+.bottom1>div:nth-child(3)>h5>sub,.bottom1>div:nth-child(3)>h5>sup{
+    position: relative;
+    top: -3vw;
+ }
+ .bottom1 ul>li{
+     list-style-type: none;
+     font-size: 2vw;
+     position: relative;
+     left: 80%;
+     top: -9vw;
+     padding: 0;
+     margin: 0;
+ }
+ .bottom1>div:nth-child(3)>p{
+    top: 0vw;
+ }
+ /* facebook section */
+ .bottom1>div:nth-child(4){
+     background-image: url(./images/fb.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+ 
+ }
+.bottom1>div:nth-child(4)>p,.bottom1>div:nth-child(5)>p{
+    top: 19vw;
+}
+/* twitter section  */
+.bottom1>div:nth-child(5){
+    background-color: #1da1f2;
+
+}
+.image9{
+    background-image: url(./images/twitter.png);
+}
+/* photoshop grid */
+.bottom1>div:nth-child(6){
+    background-image: url(./images/photoshop.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* news section */
+.bottom1>div:nth-child(7){
+    background-color: #d03438;
+    padding: 2vw;
+}
+/* news headline in news section */
+.bottom1>div:nth-child(7)>h5{
+    color: white;
+    font-size: 4vw;
+    padding: 0;
+    margin: 0;
+    font-weight: 100;
+
+}
+
+.bottom1>div:nth-child(7)>p{
+    top: 6.5vw;
+}
+/* Sketchbook section */
+.bottom1>div:nth-child(8){
+    background-image: url(./images/pencil.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* store right side icon */
+.image6,.image10{
+    background-color: black;
+    top: 75%;
+    background-image:url(./images/micro.png);
+    }
+/* news right side icon */
+.image10{
+    top: 10%;
+    background-image:url(./images/powerpoint.png);
+}
+/* -------Explorer section ends here ---------------- */
+/* *********************************************************/
+/* ------- play & OEM group start ------------------------*/
+.rtop,.rbottom{
+    margin: 0;
+    padding: 1vw;
+    background-color: black;
+    width: 100%;
+}
+.top2{
+    display: grid;
+    grid-gap: 1vw; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 30vw);
+    grid-auto-rows: 30vw;
+
+}
+.bottom2{
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2, 30vw);
+}
+.top2>div:nth-child(1){
+    background-color: #0f7a16;
+}
+.image11{
+    background-image: url(./images/x-box.jpg);
+}
+.image12{
+    background-image: url(./images/gallery.png);
+    
+}
+.top2>div:nth-child(1)>p,.top2>div:nth-child(3)>p{
+   top: 63%;
+}
+.top2>div:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1vw;
+}
+
+.sub1,.sub2,.sub3,.sub4,.top2>div:nth-child(3){
+    background-color: #1da1f2; 
+}
+/* four subgrid */
+.sub1>img,.sub2>img,.sub3>img,.sub4>img,.bttm1>img,.bttm2>img,.bttm3>img,.bttm4>img{
+    width: 8vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.bttm2>img{
+    position: relative;
+    top:9vw;
+    left: 7.5vw;
+}
+.top2>div:nth-child(4),.top2>div:nth-child(5),.top2>div:nth-child(6),.top2>div:nth-child(7),.top2>div:nth-child(8),.top2>div:nth-child(9),.bottom2>div:nth-child(5),.bottom2 div:nth-child(6){
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+   
+}
+.top2>div:nth-child(4){
+    background-image: url(./images/one.jpg);
+}
+.top2>div:nth-child(5){
+    background-image: url(/images/mincraft.jpg);
+}
+.top2>div:nth-child(6){
+    background-image: url(./images/card.jpg);
+}
+.top2>div:nth-child(7){
+    background-image: url(./images/eight.jpg);
+}
+.top2>div:nth-child(8){
+    background-image: url(./images/emire.jpg);
+}
+.top2>div:nth-child(9){
+    background-image: url(./images/nine.jpg);
+}
+.bottom2 div:nth-child(1),.bottom2 div:nth-child(3),.bttm1,.bttm2,.bttm3,.bttm4{
+    background-color: #011952;
+}
+.image13{
+    background-image: url(./images/oem.PNG);
+}
+.image14{
+    background-image: url(./images/oem\ sync.PNG);
+}
+.bottom2 div:nth-child(1)>p,.bottom2 div:nth-child(3)>p{
+    top: 19vw;
+}
+.bottom2 div:nth-child(2){
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.bottom2 div:nth-child(4)>p{
+    font-size: 4vw;
+    color: yellow;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    top: 50%;
+}
+.bottom2 div:nth-child(5){
+    background-image: url(./images/intel.jpg);
+    background-position: center;
+}
+.bottom2 div:nth-child(6){
+    background-image: url(./images/amazon.png);
+}
+/* ------- play & OEM group end ------------------------*/
+/* @media(min-width:767px){
+    .left,.right{
+        width: 50%;
+        display: block;
+        float: left;
+    }
+} */
+

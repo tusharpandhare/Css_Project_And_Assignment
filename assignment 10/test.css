@@ -1,0 +1,287 @@
+/* set bodys padding and margin to 0 */
+body{
+    padding: 0;
+    margin: 0;
+}
+/* apply box sizing to all */
+*{
+    box-sizing: border-box;
+}
+/* parent container for all container */
+#main{
+    margin: 0;
+    padding: 5% 15%;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+/* background logo image */
+#main>img{
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    left: 35%;
+    /* filter: saturate(0%); */
+    
+    
+    filter: opacity(0.1);
+    
+    
+    
+}
+/* container of actual marksheet */
+#marksheet{
+    width: 100%;
+    height: auto;
+    background-color: rgba(231, 184, 227, 0.1);
+    display: inline-block;
+    border-width: 0.5vw;
+    padding: 2vw;
+    border: 30px solid transparent;
+    border-image: url(./images/border.png) 50 repeat;
+    filter: blur(0px);
+}
+/* header section of marksheet contain up to EXAMINATION-2013 */
+header{
+    text-align: center;
+    position: relative;
+}
+/* logo placed left side of marksheet */
+header>img{
+    width: 12%;
+    position: absolute;
+    left: -2vw;
+    top: -2vw;
+    filter: saturate(600%);
+    filter: hue-rotate(200deg);
+    filter: opacity(0.8);
+
+}
+/* university name */
+header>h1{
+    font-size: 2.2vw;
+    margin: 0;  /* filter: saturate(0%); */
+    position: relative;
+    right: 0vw;
+    top: 0vw;
+    font-size: 2.3vw;
+    margin-bottom: 0;    
+
+}
+.srno{
+ font-size: 2vw;
+ position: relative;
+ margin: 0;
+ margin-bottom: 1vw;
+ left: 23vw;
+}
+/* serial numbers actual number  */
+.srno span{
+   
+
+    color: rgb(44, 9, 35);
+    opacity: 0.6;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgb(209, 13, 160);
+    filter: blur(0.8px);
+}
+.capture{
+    width: 5vw;
+    height:5vw;
+    left: 53vw;
+    top: 10vw;
+    position: absolute;
+    background-image: url(./images/Capture.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: " ";
+}
+/* heading of university and other */
+header>h2{
+    font-size: 2.5vw;
+    margin: 0;  /* filter: saturate(0%); */
+    margin-top: 1vw;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+/* formarly agra university */
+header>h3{
+    font-size: 2.5vw;
+    font-weight: 100;
+    margin: 0.4vw 0 2vw 0;
+
+}
+/* marksheet title */
+header>h4{
+    font-size: 1.7vw;
+    padding: 0.1vw;
+    margin: 0;
+}
+/* titled for examination 2013 */
+header>.examy{
+    text-decoration: underline;
+    font-size: 1.5vw;
+    margin: 0.3vw;
+}
+/* container contain candidate information */
+#detail{
+  
+    height: auto;
+    width: 100%;
+    height: auto;
+    /* background-color: rgb(202, 35, 35); */
+    display: inline-block;
+    clear: both;
+}
+/* every candidate details field */
+#detail>p{
+    font-size: 1vw;
+    font-weight: bold;
+    display: block;
+    float: left;
+    margin: 0.5vw 0;
+}
+/* first column of candidate information ans so on */
+.twenty{
+    width: 20%;
+}
+.fourty{
+    width: 40%;
+}
+.ten{
+    width: 10%;
+}
+.thirty{
+    width: 30%;
+
+}
+.eighty{
+    width: 80%;
+}
+/* marksheet table */
+#firsttable{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+   
+   
+}
+/* #firsttable{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background-color: blueviolet;
+}*/
+/* table of marks */
+#firsttable>table{
+    font-size: 1vw;
+    text-align: center;
+    width: 100%;
+    /* color: red; */
+    border-collapse:collapse;
+    /* background-color: aquamarine    ; */
+} 
+/* for all content of marks content */
+table *{
+
+    padding: 10px 0px;
+}
+/* marks table footer */
+#firsttable table tfoot *{
+    text-align: left;
+    padding: 0px 0px;
+    margin: 0px;
+}
+/* subject column in mark */
+.sub{
+    text-align: left;
+    width: 30%;
+}
+/* .total{
+    background-color: chocolate;
+    padding-left: 12vw;
+    text-align: center;
+} */
+/* total theory & practical column group */
+.last{
+    width: 10%;
+    
+}
+/* marks status table */
+#status{
+    width: 100%;
+    height: auto;
+    
+    padding: 1vw 0 8vw 0;
+}
+/* status table */
+#status table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1vw;
+    text-align: center;
+}
+#status table *{
+    margin: 0;
+    padding: 0.5vw;
+}
+/* container contain sign and barcode */
+#sign{
+    width: 100%;
+    height: auto;
+  
+    
+}
+/* for all sign and barcode images in sign container */
+#sign img{
+    max-width: 100%;
+    height: 5vw;
+    margin: 0px 3vw;
+}
+/* container for specially sign */
+#sign span{
+    width: 70%;
+    height: auto;
+    display: block;
+    float: right;
+    border: 1px solid black;
+    padding-left: 5vw;
+    background-color: white;
+}
+/* signature images */
+#sign span img{
+    height: 4vw;
+    padding: 0 5vw 0 0;
+    
+}
+/* used to place image of sign and barcode contain footer of images */
+fieldset{
+    width: 25%;
+    display: flex;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size: 0.8vw;
+    text-align: center;
+    border: none;
+    color: rgba(0,0,0,0.7);
+}
+/* containes sign and barcode */
+legend{
+    width: 100%;
+    padding: 0;
+    background-color: white;
+
+}
+/* note section of marksheet */
+footer{
+    width: 100%;
+    display: block;
+    clear: both;
+    color: rgba(0,0,0,0.7);
+    font-size: 1vw;
+    text-align: center
+}

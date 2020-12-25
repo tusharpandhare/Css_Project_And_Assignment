@@ -1,0 +1,263 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: auto;
+    /* background-color: rgb(206, 188, 223); */
+    text-align: center;
+    display: inline-block;
+}
+/* information section */
+section .info{
+    /* background-color: violet; */
+    margin-top: -0.3vw;
+    padding: 2vw;
+    text-align: center;
+}
+/* red colored text */
+section .info>.red{
+    color: red;
+}
+/* paragrapg in info section */
+section .info>p{
+    color: gray;
+    font-size: 1.3vw;
+}
+/* name of the page i.e heading */
+.bonding>h1{
+    display: block;
+    float: left;
+    font-size: 5vw;
+    margin: 0;
+}
+/* navigation menues */
+li>select,select>option{
+    border: none;
+    background-color: transparent;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+    width: 8vw;
+}
+/* when device width is greater than 1024px */
+@media(min-width:1024px){
+    li{
+        list-style-type: none;
+        float: left;
+        /* margin-left: 5vw; */
+        width: 8vw;
+    
+    
+    }
+    li>select,select>option{
+        border: none;
+        background-color: transparent;
+      
+    }
+   
+    a{
+        width: 10vw;
+        color: black;
+        text-decoration: none;
+    }
+    /* hover effect for navigation links */
+    li:hover{
+        background-color: rgba(110, 109, 109,0.4);
+        padding: 1vw;
+    }
+    /* top heading */
+    .bonding{
+        width: 80%;
+     position: relative;
+     left: 50%;
+     transform: translate(-50%);
+     margin-bottom: 1vw;
+        
+    }
+    nav>ul{
+        margin: 2vw 3vw 0 3vw;
+        display:block;
+        float: left;
+    }
+    /* social media image */
+    .bonding img{
+        margin-top: 1.7vw;
+
+    }
+       /* set the parent container for image and info */
+       section{
+        width: 100%;
+    }
+    /* parent of image and info */
+    .block{
+        width: 33.33%;
+        float: left;
+        padding:1vw;
+    }
+
+    .block .image img{
+        width: 100%;
+        
+    }
+    .block .info{
+        text-align: center;
+        background-color: white;
+        width: 25vw;
+        position: relative;
+        left: 50%;
+        top: -8vw;
+        transform: translate(-50%);
+        
+    }
+    
+}
+@media(max-width:1023px) and (min-width:425px){
+    .bars+img{
+        display: block;
+        position: fixed;
+        top: 0%;
+        left: 70%;
+        
+    }
+    .bars{
+        display: block;
+        width: 12vw;
+        height: 5vw;
+        content: "";
+        /* border: 4px solid red   ;
+        background-color: violet; */
+        background-image: url(./images/fa.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        float: right;
+
+    }
+    option,select{
+       color: white;
+    }
+    ul>li{
+        width: 18vw;
+        background-color: rgb(168, 146, 189);
+        padding: 1vw;
+        position: relative;
+        top: 2.3vw;
+        right: 15vw;
+       
+        display: none;
+    }
+    .bars:hover ul>li{
+        display: block;
+    }
+    .block{
+        width: 50%;
+        float: left;
+       
+        padding: 1vw;
+    }
+    .block:last-child{
+        position: relative;
+        left: 50%;
+        padding-top: 0;
+        transform: translate(-50%);
+    }
+    .block:nth-child(2){
+        padding-left: 0.5vw;
+    }
+    .block:nth-child(1){
+        padding-right: 0.5vw;
+    }
+    .block .image img{
+        width: 100%;
+        opacity: 1;
+    }
+    .block>.info>h2{
+        font-size: 3.3vw;
+        margin: 0;
+    }
+    section .info>p{
+      
+        font-size: 2.9vw;
+    }
+}
+@media(max-width:425px)
+{
+    .bars+img{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 30%;
+        width: 40vw;
+        z-index: 102;
+        
+    }
+    .bars{
+        display: block;
+        width: 12vw;
+        height: 5vw;
+        content: "";
+        /* border: 4px solid red   ;
+        background-color: violet; */
+        background-image: url(./images/fa.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        float: right;
+    }
+        li{
+            list-style-type: none;
+            float: left;
+        }
+    option{
+        background-color: transparent;
+    }
+    ul>li{
+        width: 30vw;
+        background-color: rgb(168, 146, 189);
+        padding: 1vw;
+        position: relative;
+        top: 2.3vw;
+        right: 35vw;
+       
+        display: none;
+    }
+    .bars:hover ul>li{
+        display: block;
+    }
+    .image{
+        width: 100%;
+        padding: 0;
+        /* margin: -3vw; */
+
+    }
+    .image img{
+        width: 100%;
+    }
+    section .info{
+        width: 64vw;
+        height: auto;
+        background-color: white;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        top:-38vw;
+    }
+    section .info>p{
+      
+        font-size: 3.3vw;
+    }
+    .info h2{
+        font-size: 5vw;
+    }
+    .block{
+        margin: 0;
+        height: 120vw;
+    }
+}

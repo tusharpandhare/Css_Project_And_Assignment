@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .first>.main>p:nth-child(3){
+            background-color: blueviolet;
+        }
+       /* .main>p:nth-child(3):hover ~.reminder>.rem{
+            display: block;
+        } */
+        .main>.reminder>.rem{
+            display: none;
+        }
+        .reminder{
+            width: 500px;
+            height: 400px;
+            background-color: burlywood;
+        }
+        .first>.main>p:nth-child(3):hover .first>p{
+            display: block;
+        }
+        .first>p{
+            display: none;
+        }
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+  <div class="first">
+    <div class="main">
+        <p class="para">1</p>
+        <p class="para">2</p>
+        <p class="para1">3</p>
+        <p class="para">4</p>
+        <p class="para">5</p>
+        
+        <div class="reminder" id="first">
+            <div id="03" class="rem">
+                <span>3</span>
+                <h1>John's Birthday today</h1>
+                <h3>Wish John Happy Birthday... </h3>
+                <h2>Thank You</h2>
+              </div>
+        </div>
+      </div>
+      <p>how are you</p>
+  </div>
+</body>
+</html>

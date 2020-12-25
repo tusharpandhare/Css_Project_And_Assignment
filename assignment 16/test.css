@@ -1,0 +1,125 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+/* parent division */
+.main{
+    display: block;
+    width: 400px;
+    height: auto;
+    display: inline-block;
+    border: 4px double black;
+    padding: 1vw;
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,100px);
+    grid-auto-rows: 100px;
+   
+    position: relative;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%);
+}
+/* grids inside division */
+.a,.b,.c,.d,.e,.f,.g,.h{
+    background-color: #90ee90;
+    padding: 2vw;
+    text-align: center;
+}
+/* text inside grid */
+b{
+    display: block;
+    position: relative;
+    top: 30%;
+    transform: translate(0, -50%);
+}
+/* hover for a */
+.a:hover{
+    /* background-color: yellowgreen; */
+   
+    animation-name: anima;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in-out;
+    grid-column: span 3;
+}
+/* hover for b */
+.b:hover{
+    animation-name: animb;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in-out;
+    /* grid-column: span 3; */
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+/* hover for h */
+.h:hover{
+    grid-column: span 2;
+    animation-name: animh;
+    /* animation-fill-mode: backwards; */
+    /* animation-name: animh; */
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    /* background-color: green; */
+
+
+   
+}
+@keyframes animh{
+   
+    to{
+       
+       background-color: green;
+       color: gray;
+       font-size: xx-large;
+       
+    }
+
+}
+@keyframes anima{
+    from{
+        font-size: 1vw;
+        
+
+    }
+    to{
+        font-size: xx-large;
+        background-color: orangered;
+        color: red;
+
+        
+    }
+}
+@keyframes animb{
+    to{
+        font-size: xx-large;
+        background-color: cyan;
+        color: white;
+    }
+}
+/* hover effect for division c */
+.c:hover ~.d,.c:hover ~.e,.c:hover ~.f,.c:hover ~.g,.c:hover ~.h{
+    animation-name: animc;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in-out;
+    grid-column: span 3;
+    
+}
+@keyframes animc{
+    to{
+        background-color: hotpink;
+        color: blue;
+        font-size: xx-large;
+    }
+}

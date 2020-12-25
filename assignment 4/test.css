@@ -1,0 +1,114 @@
+body{
+    padding: o;
+    margin: 0;
+
+}
+
+/* anchor decoretion and style */
+nav>ul>li>a{
+    text-decoration: none;
+   display: block;
+   float: left;
+   padding: 10px 20px 10px 20px;
+  /* margin-top: 20px; */
+   color: white;
+   font-size: 20px;
+}
+/* removing list style */
+ul>li{
+    list-style-type: none;
+    
+    
+}
+/* icon placing before anchor */
+ul::before {
+    background-image: url("notify.png");
+    background-size: 200px 70px;
+    display: block;
+    float: left;
+    /* background-repeat: no-repeat; */
+    /* margin-top: 10px; */
+    width: 200px;
+    height: 70px;
+    content: " ";
+    margin:-15px 0 0 100px;
+    /* margin-top: -10px; */
+    
+}
+/* navigation style */
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(49, 49, 49);
+    z-index: 10;
+    margin: 0;
+    
+}
+/* setting horizontal line */
+ul>li::before{
+    width: 2px;
+    height: 60px;
+    background-color: gray;
+    content: " ";
+    display: block;
+    float: left;
+    margin: -8px 10px 5px 10px;
+    
+}
+/* hover effect  */
+nav>ul>li>a:hover{
+    color: gold;
+}
+/* home link color */
+#home{
+    color: gold;
+}
+/* nav>ul>li>a:hover{
+    color: gold;
+} */
+/* last vertical line */
+ul:last-child::after{
+    width: 2px;
+    height: 60px;
+    background-color: gray;
+    content: " ";
+    display: block;
+    float: left;
+    margin: -10px;
+}
+nav::before{
+    width: 100%;
+    height: 3px;
+    content: " ";
+    background-color:black;
+    padding: 0;
+    margin: 0;
+    display: block;
+    clear: both;
+}
+/* division style */
+#demo{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    background-color:gray;
+    display: block;
+    float: left;
+    clear: both;
+}
+/* horizontal line after div */
+#demo::after{
+
+    width: 100%;
+    height: 3px;
+    content: " ";
+    background-color:black;
+    /* padding: 0; */
+    margin-top: 50px;
+    display: block;
+    float: left;
+    clear: both;
+}
+
+   

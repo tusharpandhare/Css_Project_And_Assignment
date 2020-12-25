@@ -1,0 +1,66 @@
+<!-----------------------------------------------------------------------------------------------------------------
++ CSS (Types of Selector & Combinator)
++ Assignment No        : 01
++ Title                : Create the form as depicted in the below image.
+                             Add the validations as mentioned in the image.
+                             Add CSS styles by using appropriate selectors and combinator
++ Start Date           : 19/feb/2020
++ End Date             : 19/feb/2020
+------------------------------------------------------------------------------------------------------------------- -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- External style sheet file name:"style.css" -->
+    <link  rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Css first assignment</title>
+</head>
+<!-- start of html body contains only form -->
+<body>
+    <!-- all contains are aligned center -->
+    <center>
+        <!-- starting of form contain header, paragraph,3 fieldset, button -->
+        <form action=" " method="POST" autocomplete="on">
+            <!-- heading of form -->
+            <h1>Web Tickets to The Web Developer Gala</h1>
+            <!-- tips/hint about form -->
+            <p>Tickets are &dollar;10 each. Dinner  packages are extra  &dollar;5. All Fields are required. </p>
+            <!-- first fieldset contain number of ticket and dinner package -->
+            <fieldset class="ticket">
+                <!-- legend of fiest fieldset -->
+                <legend>Tickets and Add-Ons</legend>
+                <label for="nticket">Number of Tickets<span>limit 8</span></label><input type="number" id="nticket" min="1" max="8" placeholder="2" required><br>
+                <label for="dpackage">Dinner packages<span>Serves 2</span></label><input type="text" id="dpackage" min="1" max="2" placeholder="1" required>
+
+            </fieldset>
+            <!-- second fieldset -->
+            <fieldset class="payment">
+                <!-- legend of second fieldset -->
+                    <legend>Payment</legend>
+                <label for="crdcard">Credit card number<span>No spaces or dashes,please</span></label><input type="text" id="crdcard" maxlength="16" placeholder="3720000000000002" autocomplete="off" required><br>
+                <label for="exp">Expiration Date<span>mm/yyyy</span></label><input type="month" min="2-2020" autocomplete="off" required>
+
+            </fieldset>
+            <!-- third field set contains address information -->
+            <fieldset id="address">
+                <!-- legend of third fieldset -->
+                <legend>Billing Address</legend>
+                <label for="name">Name</label><br><input type="text"id="name" placeholder="ex: John Q public" required><br>
+                <label for="str">Street Address</label><br>
+                <input type="text" id="str" required placeholder="ex: 1234 main street, Apt 23"><br>
+                <label for="city">City</label><br>
+
+                <input type="text" required placeholder="ex:anytown" id="city"><br>
+                <label for="state">State</label><br>
+                <input type="text" required placeholder="CA" id="state">    <br>
+                <label for="zip">ZIP</label><br>
+                <input type="number" id="zip" placeholder="123456" max="6" min="6">
+            </fieldset>
+            <!-- submit button -->
+            <input type="submit" value="Buy Ticket!">
+        </form>
+    </center>
+</body>
+</html>

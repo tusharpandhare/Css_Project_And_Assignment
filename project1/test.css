@@ -1,0 +1,263 @@
+body{
+    padding: 0 13%;
+    margin: 0;
+
+}
+*{box-sizing: border-box;}
+header{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+}
+
+header p{
+    padding: 5px;
+    margin: 5px;
+}
+p>a{color: deeppink;}
+.friend{
+text-decoration: none;
+color: black;
+}
+.picture{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    content: " ";
+    background-image: linear-gradient(140deg,rgb(238, 56, 238),rgb(204, 177, 167),rgb(17, 132, 240));
+   
+}
+.picture>p{
+    font-size: 50px;
+    font-weight: bolder;
+}
+.picture>img{
+    width: 200px;
+    height: 70px;
+    padding: 1vw 2vw 1vw 5vw;
+    margin-right: 16vw;
+    display: block;
+    float:right;
+}
+
+.motive{
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    background-color: rgba(243, 239, 239,0.3);
+}
+.motive>p{font-size: 24px; 
+    font-weight: bold; font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+margin-left: 50%;
+}
+.motive>p>span{
+    font-weight: 100;
+}
+.nav{
+  display: block;
+  float: right;
+  padding: 0 1vw;
+  text-align: center;
+  position: relative;
+}
+
+.nav a{
+    text-decoration: none;
+    /* padding: 5px; */
+    padding-right: 5px;
+    color: blue;
+    
+
+}
+.topnav>a{
+    border-right: 1.5px solid blue;
+}
+
+.bottomnav>a{
+    color: black;
+    border-right: 1.5px solid black;
+}
+.bottomnav a:last-child,.topnav a:last-child{
+    border: none;
+}
+.topnav{text-align: right;}
+.register{
+    padding:30px;
+   
+    background-image: linear-gradient(90deg,blue,purple);
+   border-radius: 20px;
+}
+.topnav+a{
+    color:white;
+    padding: 10px 30px;
+  
+ 
+}
+#mainimg{
+    width: 40%;
+
+    position: absolute;
+   left: -36%;
+   top: -95%;
+}
+.topnav{margin-bottom: 50px;}
+.bottomnav{margin-top: 50px;}
+.industry-news{
+    column-count: 2;
+    padding: 5px 20px;
+    /* background-color: darkgreen; */
+}
+/* .industry-news>img{
+    width: 80%;
+} */
+.new{
+    column-span: all;
+    text-align: center;
+    font-size: 20px;
+}
+.para+img{
+    width: 100%;
+}
+.industry-news a,.read{
+    text-decoration: none;
+    color: white;
+    background-color: deeppink;
+    padding: 10px;
+    font-size: 10px;
+    border-radius: 20px;
+    
+}
+.para{font-size: 14px; color: darkgray;}
+
+.blog{
+    column-count: 2;
+    column-rule: 1px solid darkgray;
+    padding: 20px;
+    column-gap: 40px;
+    
+}
+.blog>h3{
+    margin: 0;
+}
+.blog p{
+    margin: 0;
+    padding-bottom: 20px;
+}
+.title{
+    column-span: all;
+    text-align: center;
+    font-size: 19px;
+    padding: 10px;
+    margin: 0;
+
+}
+.com{content: " ";
+padding:0,10px;
+}
+.company{
+    padding: 20px;
+    /* background-color: darkmagenta; */
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,90px);
+    grid-row-gap: 10px;
+    grid-gap: 10px;
+}
+.com{
+    text-align: center;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+
+}
+.company div:nth-child(1){
+   background-image: url(./images/American_Megatrends_logo.png);
+}
+.company div:nth-child(2){
+   background-image: url(./images/globaledge.JPG);
+}
+.company div:nth-child(3){background-image: url(./images/methode.jpg);}
+.company div:nth-child(4){background-image: url(./images/nxp.png);}
+.company div:nth-child(5){background-image: url(./images/sasken.JPG);}
+.company div:nth-child(6){background-image: url(./images/TCOE.jpg);}
+.company div:nth-child(7){background-image: url(./images/smartautosoft.JPG);}
+.company div:nth-child(8){background-image: url(./images/L&D.JPG);}
+.student{
+    width: 100%;
+    height: auto;
+    
+    background-image: url(./images/29373453.jpg);
+
+    background-color: darkorange;
+}
+.stud{
+    color: white;
+}
+.span4{
+    padding: 20px;
+    display: grid;
+     grid-gap: 10px;
+     grid-template-columns: repeat(4,1fr);
+     grid-template-rows: 80px;
+     margin: 20px 0;
+}
+.span{
+    background-image: url(./images/youtube.jpg);
+    
+}
+.batch{
+    text-align: center;
+    color: white;
+    background-color: deeppink;
+    font-size: 20px;
+    padding: 15px 0;
+
+    margin: 0;
+}
+.batch>p{
+    
+}
+.reg
+{
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-left: 20px;
+    background-color: white;
+    font-size: 14px;
+}
+footer{
+    width: 100%;
+    height: 30px;
+    padding: 10px,0;
+   
+
+}
+footer>p{
+    display: block;
+    float: left;
+    width: 80%;
+}
+
+
+footer img{
+    display: block;
+    float: right;
+    width: 10%;
+    padding-top: 10px;
+
+}
+.social {
+    width: 10%;
+    display: block;
+    float: left;
+  
+}

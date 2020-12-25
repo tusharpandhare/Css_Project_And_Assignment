@@ -1,0 +1,29 @@
+.block1>li,.block2>li{
+    display: block;
+    /* float: left; */
+    padding: 1vw 9vw;
+   
+}
+.search{
+   display: flex;
+   line-height: 5px;
+}
+form>input{
+    display: block;
+    float: left;
+}
+.ser{
+    display: block;
+    float: left;
+    
+}
+.support{
+    clear: both;
+    text-align: left;
+}
+.navcontent{
+display: none;
+}
+.bar:hover ~.navcontent{
+    display: block;
+}

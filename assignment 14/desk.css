@@ -1,0 +1,111 @@
+
+.wrap{
+    padding: 0 0;
+    /* background-color: blueviolet; */
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+/* .navbar{
+    padding: 5% 0% 0 5%;
+} */
+.bar{
+    display: none;
+}
+.navcontent{
+    display: block;
+}
+.block1{
+    /* width: 50%;
+    height: 50px; */
+    /* background-color: brown; */
+    display: flex;
+    float: left;
+    margin: 0;
+    padding: 0;
+
+}
+.block2{
+    display: block;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.icon1>form>input{
+    width: 22vw;
+}
+li{
+    float: left;
+  }
+  .bar{
+      display: none;
+  }
+  .wrap{
+    padding: 1vw 2vw;
+  }
+  .left{
+      display: block;
+      float: left;
+      width: 25%;
+      background-color: #eeeeee;
+  }
+  .subitems>li{
+      width: 100%;
+      
+  }
+  .span6{
+      width: 65%;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+  .right{
+      display: block;
+      float: left;
+      width: 75%;
+      background-color: #eeeeee;
+      padding-left: 2vw;
+  }
+  .span2{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 1vw;
+  }
+  .span3,.span4{
+      width: 100%;
+      display: grid;
+      grid-gap: 1vw;
+      grid-template-columns: repeat(3,1fr);
+      /* display: block;
+      float: left; */
+  }
+  .progress{
+      width: 30%;
+      padding-left: 1vw;
+      display: flex;
+      float: left;
+  }
+  .container{
+      display: flex;
+  }
+ 
+  .pro{
+      width: 100%;
+      height: auto;
+      display: inline-block;
+  }
+  .pro1{
+      width: 100%;
+      margin: 1vw 0;
+      font-size: 2vw;
+  }
+  .cover{
+      width: 100%;
+      margin: 1vw 0;
+  }
+  .search span{
+      font-size: 2vw;
+  }
+ 

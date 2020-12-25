@@ -1,0 +1,103 @@
+<!-- -----------------------------------------------------------------------
++ CSS (Multiple Columns)
++ Assignment no    : 08
++ Title            : Create the following newspaper format using multiple column. Choose your own article
+                     content and images.
++ Start Date       : 27/feb/2020
++ End Date         : 27/feb/2020
+----------------------------------------------------------------------------- -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- font file link -->
+    <link rel="stylesheet" href="font/specimen_files/specimen_stylesheet.css" type="text/css" charset="utf-8" />
+	  <link rel="stylesheet" href="font/stylesheet.css" type="text/css" charset="utf-8" />
+    <!--  external css file link to test.css -->
+    <link rel="stylesheet" href="test.css">
+
+    <meta charset="UTF-Create the following newspaper format using multiple column. Choose your own article
+    content and images.8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!-- container for all element -->
+  <div id="main">
+    <!-- header section of newspaper -->
+      <header>
+          <p class="left">All the news~ The right price</p>
+          <!-- newspaper heading -->
+          <h1>The newspaper</h1>
+          <!-- right side article -->
+          <p class="right"><span>Late Edition</span>Cold tonight with Showers likely</p>
+      </header>
+      <!-- container conatin date region edition details -->
+      <div id="date">
+
+          <em>Regional Coverage</em>
+          <p>Tuesday,October 23, 1953</p>
+          <em>World Exclusives  </em>
+      </div>
+      <!-- first news with 3 column and image about delhi crisis -->
+      <article class="first">
+        <!-- heading -->
+            <h1>Uneasy Calm in Delhi After Days of Riots</h1>
+            <!-- news bar line -->
+            <em>Delhi, India</em>
+            <!-- news details -->
+            <p>An uneasy calm has settled over Delhi after three days of riots, with the death toll from the unrest rising to 27 on Wednesday. More than 200 people have been injured by rocks, bullets, beatings, stabbings, and even acid burns. The clashes between Hindus and Muslims began amid protests over India’s new controversial citizenship law passed in December, which eases the pathway to citizenship for some immigrants from neighboring countries but excludes Muslims.
+
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ullam voluptatem amet, deleniti corporis corrupti ab, sint, omnis molestiae velit maiores. Perferendis, corporis maxime. Inventore laborum libero nemo ratione magni.Debitis eos id ex saepe dolores explicabo molestiae in hic odit voluptatibus adipisci cupiditate eum aliquam, ullam fugiat aspernatur corrupti optio distinctio inventore maxime doloremque? Aut repudiandae totam voluptatum voluptatem?  Although India’s national security advisor has said the situation is “under control,” the religious violence has been the worst in the capital in decades, the Guardian reports. Mobs have chanted pro-Hindu slogans and burned or vandalized mosques, shops, and other Muslim properties. Police and paramilitary forces have been deployed in the hardest-hit areas of the city, where many Muslims have now abandoned their homes. Sporadic violence continued on Thursday.
+                .</p>
+                <!-- insering image for delhi crisis -->
+            <figure>
+                <img src="./images/delhi.jpg" alt="can't load image">
+                <!-- image caption -->
+                <figcaption>A resident looks at a damaged home and shops following clashes in New Delhi</figcaption>
+            </figure>
+      </article>
+      <!-- second news on google chrome issue -->
+      <article class="second">
+        <!-- news heading -->
+          <h1>Warning Issued For Millions Of Google Chrome Users</h1>
+          <!-- bar line -->
+          <em>Consumer tech</em>
+          <!-- news content -->
+          <p>In a new blog post, Google has confirmed three “High” level vulnerabilities within Chrome 80, one of which (CVE-2020-6418) is passwords stored locally inside Chrome's internal SQLite database. This severely impacts the ability of hackers to extract passwords from the browser and ZDNet reports that black markets are already running out of hacked data to sell as a result.a zero-day exploit that “exists in the wild”. This makes sticking on the current version of Chrome an immediate danger. Neowin notes that the zero day exploit is a Type Confusion hack which exploits JavaScript and deliberately causes errors in the browser through which hackers can run unrestricted code. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod a quis eligendi repellendus, modi laborum recusandae alias aperiam at 
+              <figure><img src="./images/chromy.jpg" alt="can't load image"><figcaption>Google Chrome is now running a process inside it which make may users uncomfortable.</figcaption></figure>
+            a switch to the AES-256 algorithm to hash  Needless to say, when n making this upgrade even more important.aspernatur corporis quas, excepturi 
+          </p>
+      </article>
+      <!-- third news on local weather -->
+      <article class="third">
+        <!-- news title -->
+          <h1>Metro Detroit weather: Out with the old, in with the cold</h1>
+          <!-- barline -->
+          <em>local weather</em>
+          <!-- detailed news -->
+          <p>The day ahead features mostly cloudy skies, with some afternoon lake effect snow showers possible.</p><p> Highs in the mid 20s (-3 degrees Celsius) will be more than offset by a stiff west wind at 20 to 30 mph, which will keep winds chills mostly in the single digits all day long.
+
+            Today’s sunrise is at 7:12 a.m., and today’s sunset is at 6:20 p.m.
+            
+            Mostly cloudy Thursday night, with lows in the upper teens to near 20 degrees (-7 degrees Celsius). West-southwest wind at 10 to 15 mph.
+            
+            Friday (TGIF!) will be a carbon copy </p>
+      </article>
+      <!-- fourth new on southern colorado -->
+      <article class="fourth">
+        <!-- news heading -->
+          <h1>Warmer and windier today across southern Colorado</h1>
+          <!-- barline -->
+          <em> Colorado Springs and Pueblo News</em>
+          <!-- detailed news explanation with aside of news -->
+          <p> Warmer and windier across Colorado compared to Wednesday, but still pretty nice leading into the weekend! We're going to see mostly sunny skies across the region with highs in the 40s and 50s. The winds will lighten up from the end of the day through the overnight hours, leading to a chilly Friday morning.
+
+            COLORADO SPRINGS: High: 49; Low: 23. A few clouds mixed in with sunshine, windy, and mild through the afternoon.
+            
+            ll keep warming up wonderfully over the next two afternoons with lighter winds. Friday is going to be sunny and dry with he 50s and 60s, while Saturday will see more sun and temperatures in the widespread 60s! We'll get windy again
+            PUEBLO: High: 56; Low: 19. Mostly sunny, warm, and tly sunny, warm, and tly sunnsdfs d wsfbreezy through the day.<aside>&quot;We will keep warming upd dry with he 50s and 60s, while Saturday will see more sun and temperatures in the widespread 60s! We'll get windy again on Sunday before a bigger cool&quot;</aside>We wi on Sunday before a bigger cool down and a quick moving snow chance next Monday.temperatures</p>
+      </article>
+  </div>
+</body>
+</html>
